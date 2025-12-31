@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantas Bacengdok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @keyframes munculPelan {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animasi-masuk {
+            animation: munculPelan 0.8s ease-out;
+        }
+    </style>
+
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+  
+<nav class="bg-white shadow-xl w-full fixed flex justify-between items-center top-0 z-50 p-4">
+    <div class="flex items-center gap-1">
+<img src="images/LOGO_KEL-removebg-preview.png" class="h-20 w-auto " >
+    <h2 class="text-md font-bold text-black ">Tantas Bacengdok</h2>
+    </div>
+    
+    <div class="flex items-center">
+        <ul class="flex gap-8 text-sm font-medium text-gray-800">
+            <li onclick="gantiHalaman('beranda')" class="hover:text-blue-800 cursor-pointer">Beranda</li>
+            <li onclick="gantiHalaman('tentang')" class="hover:text-blue-800 cursor-pointer">Tentang Kami</li>
+        </ul>
+    </div>
+    
+</nav>
+
+<section id="halaman-beranda" class="bg-gray-100 pt-48 min-h-screen animasi-masuk">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-10">
+        <div class="w-full md:w-1/2 flex justify-center">
+            <div class="relative w-64 h-64 rounded-xl shadow-xl overflow-hidden" data-carousel="slide">
+
+        <div class="relative h-full w-full">
+            
+            <div class="hidden duration-800 ease-in-out" data-carousel-item>
+                <img src="images/display1.jpeg" class="absolute block w-full h-full object-cover">
+            </div>
+
+            <div class="hidden duration-800 ease-in-out" data-carousel-item>
+                <img src="images/display2.jpeg" class="absolute block w-full h-full object-cover">
+            </div>
+            
+            <div class="hidden duration-800 ease-in-out" data-carousel-item>
+                <img src="images/display3.jpeg" class="absolute block w-full h-full object-cover">
+            </div>
+             <div class="hidden duration-800 ease-in-out" data-carousel-item>
+                <img src="images/display4.jpeg" class="absolute block w-full h-full object-cover">
+            </div>
+
+            </div>
+
+    </div>
+        </div>
+
+        <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-green-700 font-bold text-xl animate-bounce" style="animation-iteration-count: 4.5;">
+            Tantas Bacengdok
+        </h2>
+        <p class="text-gray-600 font-sans"><strong>Tantas Bacengdok</strong> merupakan produk kertas yang berbahan dasar eceng gondok. 
+Produk kertas yang dihasilkan memiliki karakteristik yang unik mulai dari teksturnya, 
+warnanya yang bervariasi, dan juga daya serap yang baik.<br><br></p>
+        <button onclick="gantiHalaman('jalan')" class="bg-blue-500 font-bold rounded-2xl p-3 hover:text-white cursor-pointer transition hover:shadow-xl transform hover:scale-105 transition duration-300 ">Lihat Perjalanan kami</button>
+        </div>
+
+
+    </div>
+<br><br><br><br>
+</section>
+
+
+
+<section id="tentang-kami" style="display: none;" class="bg-gray-100 pt-48 min-h-screen animasi-masuk bg-[url('images/bg-tentang2.png')] bg-cover bg-center bg-fixed">
+
+    <div class="container mx-auto px-6 flex flex-col flex justify-between items-center gap-1 ">
+    
+        <img src="images/LOGO_KEL-removebg-preview.png ">
+           
+
+
+
+        <div class="w-full text-center ">
+        <h1 class="text-black font-bold text-2xl">
+            Tentang Tantas Bacengdok
+        </h1>
+        <p class="text-black font-sans w-full text-center px-6 md:px-48"><strong>Tantas Bacengdok</strong>
+             merupakan proyek kelompok 3 PDB 59 Universitas Airlangga yang berfokus pada pengolahan limbah tumbuhan eceng gondok liar dengan memprosesnya menjadi kertas berkualitas.
+             Proyek dengan tema lingkungan ini memiliki tujuan <span class="text-green-700 font-bold"> mengatasi masalah 
+            eutrofikasi akibat tingkat kesuburan air yang abnormal sehingga memicu timbulnya ledakan 
+            eceng gondok. </span><br><br><br><br><br><br><br><br></p>
+    
+        </div>
+
+
+    </div>
+    <div class="bg-white shadow-xl rounded-2xl p-6">
+    <h2 class="text-2xl font-bold text-black text-center">Anggota kelompok<br><br></h2>
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Hanif Isya Annafi</h3>
+                <h4 class="text-gray-500 font-sans ">S1 Sistem Informasi</h4>
+                <h5 class="text-blue-600 font-sans">"Jika bisa nanti kenapa harus sekarang"</h5>
+                <p class="text-black font-sans"> Halo semuanya! kenalin aku Hanif yang bikin web ini 😎, kalau ada kendala sama webnya langsung kontak aku ya!!</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/hanif.jpeg" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/hanifisyaannafi" class="text-gray-500 hover:underline">@hanifisyaannafi</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Aurora Najwa Hidaya Arlin </h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/nnwax" class="text-gray-500 hover:underline">@nnwax</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Erin L.F. Rahmanto</h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/era.ranz1024" class="text-gray-500 hover:underline">@era.ranz1024</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Nur Afifah </h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/nrrafh_" class="text-gray-500 hover:underline">@nrrafh_</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Nurul Abidah</h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/nabidahh" class="text-gray-500 hover:underline">@nabidahh</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Rosita Nurul Khomariyah</h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/itsabouttaa_" class="text-gray-500 hover:underline">@itsabouttaa_</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+
+    
+    <div class="flex justify-center gap-10 flex-col-reverse md:flex-row">
+            <div class="text-left px-6 md:px-10 font-sans flex-1">
+                <h3 class="text-xl text-black font-medium">Zahra Nurrokhimatus Sholikah</h3>
+                <h4 class="text-gray-500 font-sans ">prodi kalian</h4>
+                <h5 class="text-blue-600 font-sans">"quotes kalian"</h5>
+                <p class="text-black font-sans">deskripsi diri(bebas)</p>
+            </div>
+
+            <div class="m-4">
+                <img src="images/pp-kosong.png" class="h-64 w-64 rounded-2xl object-cover border-4 border-blue-900">
+                <div class="flex items-center">
+                     <img src="images/logo-ig.png" class="h-6">
+                     <a href="https://www.instagram.com/zhraaa.ns" class="text-gray-500 hover:underline">@zhraaa.ns</a>
+
+                </div>
+               
+            </div>
+
+    </div>
+
+    <br><br><br>
+    </div>
+</div>
+
+
+
+</section>
+
+
+<section id="perjalanan" style="display: none;" class="bg-gray-100 pt-48 min-h-screen animasi-masuk">
+    <div class="text-left px-10">
+        <h2 class="text-black text-2xl font-bold font-weight">Perjalanan Kami</h2>
+        <div class="space-y-8">
+             <div class="bg-white shadow-md rounded-xl flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+            <div class="flex-1">
+             <h3 class="text-blue-600 text-lg">Kamis, 07 November 2024</h3>
+        <p class=" text-gray-500" >Kegiatan dimulai dengan mengumpulkan tanaman eceng gondok dari sungai dan mengeringkannya.  </p>
+            </div>
+            <img src="images/7-nov.jpg" class=" h-48 w-48 rounded-xl object-cover border-4 border-black m-4 ">
+        </div>
+
+          <div class="bg-white shadow-md rounded-xl flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+            <div class="flex-1">
+             <h3 class="text-blue-600 text-lg">Jumat, 15 November 2024</h3>
+        <p class=" text-gray-500" >Eceng gondok yang sudah kering diambil batangnya saja dan dihancurkan dengan menggunakan chopper atau penggiling hingga menjadi serat halus.</p>
+            </div>
+            <img src="images/15-nov.jpg" class=" h-48 w-48 rounded-xl object-cover border-4 border-black m-4 ">
+        </div>
+
+          <div class="bg-white shadow-md rounded-xl flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+            <div class="flex-1">
+             <h3 class="text-blue-600 text-lg">Sabtu, 16 November 2024</h3>
+        <p class=" text-gray-500" >Pulp diratakan pada kain penyaring atau papan, kemudian dikeringkan 
+            dengan menggunakan spons, setelah itu dijemur hingga kering untuk membentuk lembaran kertas. </p>
+            </div>
+            <img src="images/16-nov.jpg" class=" h-48 w-48 rounded-xl object-cover border-4 border-black m-4 ">
+        </div>
+
+          <div class="bg-white shadow-md rounded-xl flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+            <div class="flex-1">
+             <h3 class="text-blue-600 text-lg">Rabu, 20 November 2024</h3>
+        <p class=" text-gray-500" >Setelah lembaran kertas mengering, lembaran kertas tersebut disetrika 
+                    dengan suhu rendah. Tujuan dari proses penyetrikaan ini adalah agar 
+                    lembaran kertas lurus dengan sempurna.</p>
+            </div>
+            <img src="images/20-nov.jpg" class=" h-48 w-48 rounded-xl object-cover border-4 border-black m-4 ">
+        </div>
+
+        <div class="bg-white shadow-md rounded-xl flex flex-col md:flex-row justify-center items-center gap-8 p-6">
+            <div class="flex-1">
+             <h3 class="text-blue-600 text-lg">Senin, 02 Desember 2024</h3>
+        <p class=" text-gray-500" >Lembaran-lembaran kertas eceng gondok dipotong sesuai dengan 
+                                ukuran pembatas buku pada umumnya. Di sini kami menginovasikan 
+                                bentuk pembatas buku dengan model yang lucu. Produk pembatas buku 
+                                kami, dihias dengan hiasan kupu-kupu di ujungnya sehingga memudahkan 
+                                pembaca untuk mencari halaman terakhir yang dibaca.</p>
+            </div>
+            <img src="images/2-des.jpg" class=" h-48 w-48 rounded-xl object-cover border-4 border-black m-4 ">
+        </div>
+
+        
+
+       
+    </div>
+       
+
+
+
+    </div>
+    
+    
+
+</section>
+
+
+
+
+
+<section class="bg-gray-900 pt-5 ">
+    <div class="container mx-auto px-6">
+<div class="w-full md:w-1/2 text-left">
+        <h3 class="text-white font-medium">Hubungi Kami <br></h3>
+    </div>
+    <div class="flex items-center">
+
+    <img src="images/logo-gmail.png" class="h-4">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kelompok3keren.abiez@gmail.com" class="text-gray-300 hover:underline">kelompok3keren.abiez@gmail.com</a>
+    
+    </div>
+     <div class="flex items-center">
+    <img src="images/logo-ig.png" class="h-6">
+    <a href="https://www.instagram.com/tantasbacengdok" class="text-gray-300 hover:underline">@tantasbacengdok</a>
+    </div>
+    </div>
+    
+
+
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="script-tantasbacengdok.js"></script>
+</body>
+</html>
